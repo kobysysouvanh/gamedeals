@@ -9,7 +9,7 @@ export default function Home() {
             scan the internet for the lowest prices and hottest deals. Find your
             next favorite game for less, guaranteed.
           </p>
-          <button className="bg-secondary w-40 text-background text-lg py-1 rounded hover:cursor-pointer">Find Deals</button>
+          <button className="bg-secondary w-40 text-background text-lg py-1 rounded hover:cursor-pointer font-medium">Find Deals</button>
         </div>
         <div className="w-1/2">
 
