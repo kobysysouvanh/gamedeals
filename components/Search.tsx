@@ -30,7 +30,6 @@ const Search = () => {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      console.log(data);
       setResults(data);
     } catch (error) {
       setResults([]);
@@ -69,7 +68,7 @@ const Search = () => {
       <DialogTrigger asChild>
         <button className="flex items-center bg-accent px-2 h-10 hover:border hover:border-secondary space-x-4 rounded border border-transparent hover:cursor-pointer transition duration-300 group">
           <SearchIcon className="size-5 opacity-70 group-hover:opacity-100 transition duration-300" />
-          <p className="text-md px-4 opacity-70 group-hover:opacity-100 transition duration-300">
+          <p className="text-md px-4 opacity-70 group-hover:opacity-100 transition duration-300 truncate">
             Search Game
           </p>
           <div className="w-14 py-1 bg-accent rounded flex items-center justify-center border border-background">
