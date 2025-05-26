@@ -33,6 +33,7 @@ const Search = () => {
       setResults(data);
     } catch (error) {
       setResults([]);
+      throw new Error("Error: " + error);
     }
     setLoading(false);
   };
