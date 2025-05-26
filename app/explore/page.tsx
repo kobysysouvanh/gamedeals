@@ -25,7 +25,6 @@ const ExplorePage = () => {
     const fetchDeals = async () => {
       const url = `${process.env.NEXT_PUBLIC_API_URL as string}/api/1.0/deals`;
       setLoading(true);
-      // await new Promise(res => setTimeout(res, 5000));
 
       try {
         const res = await fetch(url);
@@ -68,7 +67,7 @@ const ExplorePage = () => {
                       unoptimized
                     />
                   </div>
-                  <h2 className="text-lg font-semibold text-white text-center truncate w-full">
+                  <h2 className="text-md font-semibold text-white text-center truncate w-full">
                     {game.title}
                   </h2>
                   <p className="text-center w-full">
